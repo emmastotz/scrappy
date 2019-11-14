@@ -1,2 +1,2 @@
-# scrappy (because it'scrappy)
+# Scrappy (because it'scrappy)
 A web app that lets users view and leave comments on the latest news.
