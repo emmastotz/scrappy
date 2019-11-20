@@ -16,7 +16,7 @@
 img.image-newspaper {
   width: 100%;
   height: auto;
-  z-index: 0;
+  z-index: -1;
 }
 
 body {
@@ -24,8 +24,8 @@ body {
 }
 
 div.article-container {
-  height: 450px;
-  width: 900px;
+  height: 60%;
+  width: 57%;
   overflow-y: scroll;
   position: absolute;
   left: 5%;

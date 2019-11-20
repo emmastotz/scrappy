@@ -3,6 +3,7 @@
 var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 // ===================================================
 // PORT
 var PORT = process.env.PORT || 8000;
@@ -28,7 +29,7 @@ app.set("view engine", "handlebars");
 require("./routes/routes")(app);
 // ===================================================
 // MONGO DB CONNECTION
-mongoose.connect("mongodb://localhost/scrappy", { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI);
 // ===================================================
 // LISTENING
 app.listen(PORT, function() {
